@@ -1,0 +1,147 @@
+.hero_desc-work {
+    font-size: var(--fs-200);
+}
+
+.section-contact-intro.container {
+    --max-width: 910px;
+}
+
+
+.story-contact-intro {
+    padding-block: 2rem;
+}
+
+.contact-intro-text h2 {
+    font-size: var(--fs-700);
+    line-height: 1.2;
+    margin-bottom: 2.5rem;
+}
+
+.contact-intro-text p {
+    font-size: calc(var(--fs-400) - 0);
+    margin-top: 1.75rem;
+    line-height: 1.7;
+}
+
+.contact-intro-text a {
+    display: block;
+    /* text-decoration: none; */
+    color: var(--clr-accent-400);
+    margin-top: 1rem;
+}
+
+.contact-intro-text a:hover {
+    color: var(--clr-accent-300);
+
+}
+
+.section-contact-form .container {
+    --max-width: 810px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* form stuff */
+.contact-form {
+    width: 100%;
+    /* padding: 1rem; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 4rem;
+    font-size: var(--fs-300);
+    color: var(--clr-nutral-900);
+}
+
+.inputBox {
+    position: relative;
+    width: 100%;
+}
+
+.inputBox>label {
+    font-weight: var(--fw-bold);
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    word-spacing: .1rem;
+    display: block;
+    margin-bottom: .5rem;
+}
+
+.inputBox>input,
+.inputBox>textarea,
+.inputBox>select {
+    width: 100%;
+    padding: .25rem;
+    outline: none;
+    border: none;
+    background-color: transparent;
+    border-bottom: 2px solid var(--lg-border-2);
+    transition: all linear .2s;
+}
+
+/* .inputBox>select {
+    width: 100%;
+    padding: .25rem;
+    outline: none;
+    border: none;
+    background-color: transparent;
+    border-bottom: 2px solid var(--lg-border-2);
+
+
+} */
+
+.inputBox>textarea {
+    resize: vertical;
+}
+
+.inputBox>select {
+    font-weight: var(--fw-semi-bold);
+}
+
+.inputBox>input:is(:focus, :valid),
+.inputBox>textarea:is(:focus, :valid),
+.inputBox>select:is(:focus, :valid) {
+    border-color: var(--clr-accent-300);
+}
+
+.inputBox>select option {
+    font-weight: var(--fw-semi-bold);
+    font-size: var(--fs-400);
+    background-color: var(--clr-accent-300);
+}
+
+.worktype-selection {
+    margin: 1rem 0 0 1.5rem;
+}
+
+.worktype-selection>div {
+    padding-block: .25rem;
+    display: flex;
+    justify-content: start;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+.submitBox {
+    display: grid;
+    place-items: center;
+}
+
+.submitBox .btn {
+    font-size: var(--fs-400);
+    border-radius: 100vmax;
+    padding-inline: 2rem;
+}
+
+@media (max-width:50em) {
+    .contact-intro-text h2 {
+        font-size: var(--fs-600);
+    }
+
+    .contact-intro-text p {
+        font-size: var(--fs-300);
+    }
+}

@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="fishyy clone about page">
+
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+
+    <title>Fishy Clone</title>
+
+    <link rel="stylesheet" href="../fonts/icofont/icofont.min.css">
+    <link rel="stylesheet" href="../fonts/fontawesome/fontawesome.min.css">
+
+    <link rel="stylesheet" href="../vendor/slickslider/slick.min.css" async>
+
+    <link rel="stylesheet" href="../main.css" async>
+    <link rel="stylesheet" href="contact.css">
+
+</head>
+
+
+<body>
+
+    <!-- <div class="backDrop"></div> -->
+    <a href="#" class="backTop btn || fas fa-arrow-up"></a>
+
+    <header>
+
+        <nav class="main_navbar">
+            <div class="container">
+                <a href="../index.html" class="logo"><img src="../img/logo.png" width="500" height="112" alt="logo"></a>
+
+                <div class="burger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+
+                <ul role="list" class="nav_items">
+                    <li class="nav_link"><a href="./index.html">Home</a></li>
+                    <li class="nav_link"><a href="../navigations/about.html">About</a></li>
+                    <li class="nav_link portfolio">
+                        <div class="portfolioAndArrow">
+                            <a class="dropdown-link portfolio_arrow_a"
+                                href="../portfolios/portfolioa_link.html">Portfolio</a>
+                            <svg class="portfolio_arrow" aria-hidden="true" focusable="false" data-prefix="fal"
+                                data-icon="angle-up" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512"
+                                data-fa-i2svg="">
+                                <path fill="currentColor"
+                                    d="M136.5 185.1l116 117.8c4.7 4.7 4.7 12.3 0 17l-7.1 7.1c-4.7 4.7-12.3 4.7-17 0L128 224.7 27.6 326.9c-4.7 4.7-12.3 4.7-17 0l-7.1-7.1c-4.7-4.7-4.7-12.3 0-17l116-117.8c4.7-4.6 12.3-4.6 17 .1z">
+                                </path>
+                            </svg>
+                        </div>
+
+                        <ul role="list" class="portfolio_dropdown dropdown-list">
+                            <li><a href="../portfolios/architecture.html">Architecture</a></li>
+                            <li><a href="../portfolios/residential_interiors.html">Residential Interiors</a></li>
+                            <li><a href="../portfolios/office_interiors.html">Office Interiors</a></li>
+                            <li><a href="../portfolios/institutuins.html">Institutions</a></li>
+                            <li><a href="../portfolios/retail_restaurants.html">Retail & Restaurants</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav_link"><a href="../navigations/contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+
+    </header>
+
+    <main>
+
+        <section class="hero">
+            <div class="hero-slider slider-side-arrow">
+                <div class="hero-slider__item item-1" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url(
+          ../img/contact/contect_hero.webp)">
+                    <div class="hero_desc container">
+                        <h2 class="hero_desc-title fw-bold uppercase text-accent-100 textCenter">Get in Touch </h2>
+                        <p class="hero_desc-work fw-semi-bold uppercase text-neutral-100 textCenter">
+                            Always excited to talk!</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section-contact-intro container || padding-block-900">
+            <div class="contact-intro-text">
+                <h2 class="story-text-headding fw-bold">The story of a photographer</h2>
+                <p>
+                    It was at this time that a few college friends gave her her first break at documenting their
+                    projects, one project led to another but her eye for details fastened her the way through this new
+                    field. She was lucky enough to have gotten published quickly , got to document many privileged
+                    projects with some fabulous architects and designers and she has not looked back ever since.
+                </p>
+                <a href="mailto:ishi@thefishyproject.com">ishi@thefishyproject.com</a>
+            </div>
+        </section>
+
+        <section class="section section-contact-form bg-accent-100">
+            <div class="container || padding-block-900">
+                <form action="" class="contact-form">
+                    <div class="inputBox">
+                        <label for="name">Your Name *</label>
+                        <input type="text" name="username" id="username" required>
+                    </div>
+
+                    <div class="inputBox">
+                        <label for="Email address">Email *<Address></Address></label>
+                        <input type="email" name="useremail" id="useremail" required>
+                    </div>
+
+                    <div class="inputBox worktype">
+                        <label for="worktype">What type of Project do you want to document ?</label>
+                        <div class="worktype-selection">
+                            <div>
+                                <input type="radio" name="worktype-option" id="architecture" value="architecture">
+                                <label for="architecture">Architecture</label>
+                            </div>
+                            <div>
+                                <input type="radio" name="worktype-option" id="residential" value="residential">
+                                <label for="residential">Residential Interiors</label>
+                            </div>
+                            <div>
+                                <input type="radio" name="worktype-option" id="office" value="office">
+                                <label for="office">Office Interiors</label>
+                            </div>
+                            <div>
+                                <input type="radio" name="worktype-option" id="other-worktype" value="other-worktype">
+                                <label for="other-worktype">Others</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="inputBox">
+                        <label for="hear-about-me">How did you hear about me?</label>
+                        <select name="hear-about-me-select" id="hear-about-me-select" required>
+                            <option value="none" selected disabled hidden>Select Option</option>
+                            <option value="social">Social Media</option>
+                            <option value="google">Google</option>
+                            <option value="friend">From A Friend</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+
+                    <div class="inputBox">
+                        <label for="detial-about-project">Please give some details about your project</label>
+                        <textarea name="detial-project" id="detial-project" cols="50" rows="5" required></textarea>
+                    </div>
+
+                    <div class="inputBox submitBox">
+                        <button type="submit" class="btn uppercase">send message</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="container">
+
+        <div class="socials">
+            <a class="icofont-facebook" aria-label="facebook" href="#"></a>
+            <a class="icofont-instagram" aria-label="instagram" href="#"></a>
+            <a class="icofont-linkedin" aria-label="linkedin" href="#"></a>
+        </div>
+
+        <div class="footer-nav">
+            <ul role="list" class="footer-nav__item">
+                <li class="nav_link"><a href="./index.html">Home</a></li>
+                <li class="nav_link"><a href="../navigations/about.html">About</a></li>
+                <li class="nav_link portfolio portfolioFooter">
+                    <a class="dropdown-link" href="../portfolios/portfolioa_link.html">Portfolio</a>
+                    <ul role="list" class="portfolio_dropdown portfolio_dropdownFooter dropdown-list">
+                        <li><a href="../portfolios/architecture.html">Architecture</a></li>
+                        <li><a href="../portfolios/residential_interiors.html">Residential Interiors</a></li>
+                        <li><a href="../portfolios/office_interiors.html">Office Interiors</a></li>
+                        <li><a href="../portfolios/institutuins.html">Institutions</a></li>
+                        <li><a href="../portfolios/retail_restaurants.html">Retail & Restaurants</a></li>
+                    </ul>
+                </li>
+                <li class="nav_link"><a href="../navigations/contact.html">Contact</a></li>
+            </ul>
+
+
+        </div>
+
+        <div class="copyrights">
+            <p class="textCenter">All content Copyright &copy; 2022 The Fishy Project</p>
+        </div>
+    </footer>
+
+
+    <!-- TODO user script -->
+    <script type="module" src=" ../main.js"></script>
+
+
+</body>
+
+</html>
